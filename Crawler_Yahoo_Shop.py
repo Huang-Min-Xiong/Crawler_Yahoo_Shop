@@ -7,7 +7,7 @@ res = requests.get(url)
 soup = BeautifulSoup(res.text, 'html.parser')
 
 
-db_path=r'.\Crawler_Yahoo_Shop_DB.db' #資料庫路徑
+db_path = r'.\Crawler_Yahoo_Shop_DB.db' #資料庫路徑
 conn = sqlite3.connect(db_path) #連接資料庫
 cur = conn.cursor()
 
